@@ -1,3 +1,27 @@
 @use 'variables';
 @use 'fonts';
 @use 'typography';
+
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (max-width: 768px) {padding: 0 40px}
+  @media (max-width: 576px) {padding: 0 30px}
+  @media (max-width: 380px) {padding: 0 20px}
+}
+
+.title {
+  text-align: center;
+  font-weight: 800;
+  font-size: 54px;
+  line-height: 140%;
+  margin-bottom: 100px;
+
+  @media (max-width: 992px) {font-size: 44px;margin-bottom: 70px}
+  @media (max-width: 768px) {font-size: 40px;margin-bottom: 60px}
+  @media (max-width: 576px) {font-size: 36px;margin-bottom: 50px}
+  @media (max-width: 380px) {font-size: 32px;margin-bottom: 40px}
+}
