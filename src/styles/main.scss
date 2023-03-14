@@ -1,27 +1,78 @@
 @use 'variables';
 @use 'fonts';
 @use 'typography';
+@use 'reset';
 
 
 .container {
-  max-width: 1400px;
-  margin: 0 auto;
-  padding: 0 30px;
+	position: relative;
+	max-width: 1400px;
+	margin: 0 auto;
+	padding: 0 30px;
 
-  @media (max-width: 768px) {padding: 0 40px}
-  @media (max-width: 576px) {padding: 0 30px}
-  @media (max-width: 380px) {padding: 0 20px}
+	@media (max-width: 768px) {
+		padding: 0 40px
+	}
+
+	@media (max-width: 576px) {
+		padding: 0 30px
+	}
+
+	@media (max-width: 380px) {
+		padding: 0 20px
+	}
 }
 
 .title {
-  text-align: center;
-  font-weight: 800;
-  font-size: 54px;
-  line-height: 140%;
-  margin-bottom: 100px;
+	text-align: center;
+	font-weight: 800;
+	font-size: 54px;
+	line-height: 140%;
+	margin-bottom: 100px;
 
-  @media (max-width: 992px) {font-size: 44px;margin-bottom: 70px}
-  @media (max-width: 768px) {font-size: 40px;margin-bottom: 60px}
-  @media (max-width: 576px) {font-size: 36px;margin-bottom: 50px}
-  @media (max-width: 380px) {font-size: 32px;margin-bottom: 40px}
+	@media (max-width: 992px) {
+		font-size: 44px;
+		margin-bottom: 70px
+	}
+
+	@media (max-width: 768px) {
+		font-size: 40px;
+		margin-bottom: 60px
+	}
+
+	@media (max-width: 576px) {
+		font-size: 36px;
+		margin-bottom: 50px
+	}
+
+	@media (max-width: 380px) {
+		font-size: 32px;
+		margin-bottom: 40px
+	}
+}
+
+.btn-yallow {
+	padding: 27px 30px;
+	color: #292D32;
+	font-weight: 600;
+	font-size: 17px;
+	line-height: 130%;
+	background: #FEDD2E;
+	border-radius: 10px;
+	height: 75px;
+	display: flex;
+	justify-content: center;
+	gap: 0 10px;
+
+	img {
+		width: 24px !important;
+		height: 24px !important;
+		padding: 0 !important;
+	}
+
+	&__text {
+		font-weight: 600;
+		font-size: 17px;
+		line-height: 130%;
+	}
 }

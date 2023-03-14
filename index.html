@@ -1,40 +1,126 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Главная</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+	<meta charset="UTF-8">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Главная</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
 </head>
+
 <body>
-    <section></section>
-    <main class="page">
-        <section class="benefits">
-            <div class="container">
-                <h2 class="title">Преимущества</h2>
-                <div class="benefits__list">
-                    <div class="benefits__item">
-                        <div class="benefits__img"><img src="src/assets/images/benefits-1.svg" alt="benefits"></div>
-                        <div class="benefits__text">Более 20 лет опыта</div>
-                    </div>
-                    <div class="benefits__item">
-                        <div class="benefits__img"><img src="src/assets/images/benefits-2.svg" alt="benefits"></div>
-                        <div class="benefits__text">Индивидуальный подход</div>
-                    </div>
-                    <div class="benefits__item">
-                        <div class="benefits__img"><img src="src/assets/images/benefits-3.svg" alt="benefits"></div>
-                        <div class="benefits__text">Ведение клиента от заявки до возвращения из путешествия</div>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-<script src="src/scripts/main.js" type="module"></script>
-<script src="src/scripts/pages/home.js" type="module"></script>
+	<section></section>
+	<main class="page">
+		<section class="benefits">
+			<div class="container">
+				<h2 class="title">Преимущества</h2>
+				<div class="benefits__list">
+					<div class="benefits__item">
+						<div class="benefits__img"><img src="src/assets/images/benefits-1.svg" alt="benefits"></div>
+						<div class="benefits__text">Более 20 лет опыта</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__img"><img src="src/assets/images/benefits-2.svg" alt="benefits"></div>
+						<div class="benefits__text">Индивидуальный подход</div>
+					</div>
+					<div class="benefits__item">
+						<div class="benefits__img"><img src="src/assets/images/benefits-3.svg" alt="benefits"></div>
+						<div class="benefits__text">Ведение клиента от заявки до возвращения из путешествия</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="popular-destinations">
+			<div class="container">
+				<h2 class="title">Популярные направления</h2>
+				<div class="popular-destinations__list">
+					<div class="popular-destinations__item popular-destinations__item--big">
+						<div class="popular-destinations__item-info">
+							<div class="popular-destinations__flag">
+								<img src="src/assets/images/popular-destinations-flag-1.svg" alt="flag">
+							</div>
+							<div class="popular-destinations__title">Арабские Эмираты</div>
+							<div class="popular-destinations__price">от 120 200 тг.</div>
+						</div>
+					</div>
+					<div class="popular-destinations__item">
+						<div class="popular-destinations__item-info">
+							<div class="popular-destinations__flag">
+								<img src="src/assets/images/popular-destinations-flag-2.svg" alt="flag">
+							</div>
+							<div class="popular-destinations__title">Египет</div>
+							<div class="popular-destinations__price">от 119 356 тг.</div>
+						</div>
+					</div>
+					<div class="popular-destinations__item">
+						<div class="popular-destinations__item-info">
+							<div class="popular-destinations__flag">
+								<img src="src/assets/images/popular-destinations-flag-3.svg" alt="flag">
+							</div>
+							<div class="popular-destinations__title">Турция</div>
+							<div class="popular-destinations__price">от 119 356 тг.</div>
+						</div>
+					</div>
+					<div class="popular-destinations__item">
+						<div class="popular-destinations__item-info">
+							<div class="popular-destinations__flag">
+								<img src="src/assets/images/popular-destinations-flag-4.svg" alt="flag">
+							</div>
+							<div class="popular-destinations__title">Мальдивы</div>
+							<div class="popular-destinations__price">от 80 400 тг.</div>
+
+						</div>
+					</div>
+					<div class="popular-destinations__item">
+						<div class="popular-destinations__item-info">
+							<div class="popular-destinations__flag">
+								<img src="src/assets/images/popular-destinations-flag-5.svg" alt="flag">
+							</div>
+							<div class="popular-destinations__title">Таиланд</div>
+							<div class="popular-destinations__price">от 240 000 тг.</div>
+						</div>
+					</div>
+				</div>
+
+				<form action='#' class="popular-destinations__form">
+					<div class="popular-destinations__form-title title">Не нашли что искали?</div>
+					<div class="popular-destinations__form-subtitle">Оставьте заявку и мы обязательно подберем для Вас лучшее
+						предложение</div>
+
+					<div class="popular-destinations__form-input-box">
+						<input type="text" placeholder="Ваше Имя">
+						<input type="number" placeholder="Ваш телефон">
+						<button class="popular-destinations__form-btn btn-yallow">
+							<img src="src/assets/images/phone.svg" alt="phone">
+							<div class="btn-yallow__text">Заказать звонок</div>
+						</button>
+					</div>
+
+				</form>
+			</div>
+		</section>
+
+		<section class="recommendations">
+			<div class="container">
+				<div class="title">Горящие туры и предложения</div>
+				<div class="recommendations__list">
+					<div class="recommendations__item"></div>
+				</div>
+
+				<div class="recommendations__btn btn-white"></div>
+			</div>
+		</section>
+
+		<section class="about"></section>
+	</main>
+	<script src="src/scripts/main.js" type="module"></script>
+	<script src="src/scripts/pages/home.js" type="module"></script>
 </body>
+
 </html>
